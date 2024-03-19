@@ -1,7 +1,5 @@
-package com.aniketjain.weatherapp.adapter;
-
-import android.annotation.SuppressLint;
-import android.content.Context;
+import android.annotation.SuppressLint;  //Annotations are metadata that provide data about a program
+import android.content.Context;   //in the Android SDK that contains fundamental classes for accessing and managing application
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -41,12 +39,14 @@ public class DaysAdapter extends RecyclerView.Adapter<DaysAdapter.DayViewHolder>
 
     @NonNull
     @Override
+    //This method is responsible for creating a new ViewHolder instance for each item in the RecyclerView
     public DayViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(context).inflate(R.layout.day_item_layout, parent, false);
         return new DayViewHolder(view);
     }
 
     @Override
+    //This method is responsible for binding data to the views within each item of the RecyclerView.
     public void onBindViewHolder(@NonNull DayViewHolder holder, int position) {
         getDailyWeatherInfo(position + 1, holder);
     }
@@ -55,7 +55,7 @@ public class DaysAdapter extends RecyclerView.Adapter<DaysAdapter.DayViewHolder>
     public int getItemCount() {
         return 6;
     }
-
+//This method is responsible for fetching the daily weather information for a specific day and updating the UI accordingly.
     @SuppressLint("DefaultLocale")
     private void getDailyWeatherInfo(int i, DayViewHolder holder) {
         URL url = new URL();
