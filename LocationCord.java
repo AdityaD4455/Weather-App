@@ -1,5 +1,3 @@
-package com.aniketjain.weatherapp.location;
-
 public class LocationCord {
     public static String lat = "";
     public static String lon = "";
