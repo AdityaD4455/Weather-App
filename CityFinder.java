@@ -1,5 +1,3 @@
-package com.aniketjain.weatherapp.location;
-
 import android.content.Context;
 import android.location.Address;
 import android.location.Geocoder;
@@ -10,7 +8,7 @@ import java.util.List;
 import java.util.Locale;
 
 public class CityFinder {
-
+//setLongitudeLatitude method sets the latitude and longitude coordinates received from the device's location service.
     public static void setLongitudeLatitude(Location location) {
         try {
             LocationCord.lat = String.valueOf(location.getLatitude());
@@ -21,7 +19,7 @@ public class CityFinder {
             e.printStackTrace();
         }
     }
-
+//getCityNameUsingNetwork method retrieves the city name corresponding to the provided latitude and longitude coordinates.
     public static String getCityNameUsingNetwork(Context context, Location location) {
         String city = "";
         try {
