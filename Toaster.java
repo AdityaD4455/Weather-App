@@ -1,5 +1,3 @@
-package com.aniketjain.weatherapp.toast;
-
 import android.content.Context;
 
 import com.aniketjain.roastedtoast.Toasty;
