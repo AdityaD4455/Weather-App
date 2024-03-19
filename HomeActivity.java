@@ -1,5 +1,3 @@
-package com.aniketjain.weatherapp;
-
 import static com.aniketjain.weatherapp.location.CityFinder.getCityNameUsingNetwork;
 import static com.aniketjain.weatherapp.location.CityFinder.setLongitudeLatitude;
 import static com.aniketjain.weatherapp.network.InternetConnectivity.isInternetConnected;
